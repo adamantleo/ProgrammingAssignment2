@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Make cache matrix creates a temporary matrix 
+## where the cache data is stored and then the cachesolve calculates the inverse of the matrix 
 
-## Write a short comment describing this function
+## creates a temporary storage space for matrix cache inverse
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-## Write a short comment describing this function
+## the function searches if the cache is available and then proceeds to solve the matrix inverse
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
